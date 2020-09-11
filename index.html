@@ -377,14 +377,14 @@
         //zobrazeni zdravi
         c.fillStyle = "green";
         c.fillRect(400, 10, (nanonautZdravi / NANONAUT_MAX_ZDRAVI) * 380, 20);
-        c.strokeStyle = "green";
+        c.strokeStyle = "red";
         c.strokeRect(400, 10, 380, 20);
 
         //kdyz hra skonci zobraz konec hry
         if (hraMod == HRA_SKONCILA_MOD) {
           c.fillStyle = "black";
           c.font = "96px sans-serif";
-          c.fillText("Prohrál jsi!", 120, 300);
+          c.fillText("Prohrál jsi!!!", 120, 300);
         }
       }
 
